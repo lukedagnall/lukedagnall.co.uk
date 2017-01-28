@@ -1,0 +1,164 @@
+.track{
+  position: relative;
+  margin: 20px 0;
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+
+  .track__title{
+    display: block;
+    font-size: em(18);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .track__artist{
+    font-weight: 500;
+    font-size: em(15);
+    color: $tertiaryColor;
+  }
+
+  &:after{
+    content: '';
+    background-image: url('/images/shapes/circle-red.svg');
+    background-size: 12px 12px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 12px;
+    height: 12px;
+  }
+
+  @media #{$tablet}{
+    position: absolute;
+    margin: 0;
+  }
+
+  @media #{$laptop}{
+    text-align: left;
+    padding-left: 25px;
+
+    &:after{
+      top: calc(50% - 18px);
+      bottom: auto;
+      right: auto;
+      margin: auto;
+    }
+
+    &.track--now-playing{
+      padding-left: 28px;
+      &:after{
+        bottom: auto;
+        top: 5px;
+      }
+    }
+  }
+}
+
+.track-container{
+  position: relative;
+  width: 100%;
+
+  @media #{$tablet}{
+    height: 350px;
+    margin: 35px 0;
+  }
+
+  @media #{$laptop}{
+    height: 275px;
+  }
+
+  @media #{$desktop}{
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.track--blue{
+  &:after{
+    background-image: url('/images/shapes/circle-blue.svg');
+  }
+  @media #{$tablet}{
+    top: 25px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  @media #{$laptop}{
+    top: 25px;
+    left: 0;
+    right: auto;
+    margin: 0;
+  }
+}
+
+.track--yellow{
+  &:after{
+    background-image: url('/images/shapes/circle-yellow.svg');
+  }
+
+  @media #{$tablet}{
+    top: calc(50% - 35px);
+    left: 25px;
+  }
+
+  @media #{$laptop}{
+    top: 0;
+    left: auto;
+    right: 250px;
+    margin: 0;
+  }
+}
+
+.track--red{
+  &:after{
+    background-image: url('/images/shapes/circle-red.svg');
+  }
+
+  @media #{$tablet}{
+    top: calc(50% - 35px);
+    right: 25px;
+  }
+
+  @media #{$laptop}{
+    right: 0;
+  }
+}
+
+.track--green{
+  &:after{
+    background-image: url('/images/shapes/circle-green.svg');
+  }
+
+  @media #{$tablet}{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 25px;
+  }
+
+  @media #{$laptop}{
+    left: 250px;
+    right: auto;
+    margin: 0;
+    bottom: 25px;
+  }
+}
+
+.track--now-playing{
+  &:after{
+    content: '';
+    background-image: url('/images/shapes/note.svg') !important;
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+    bottom: -8px;
+    -webkit-animation-name: Floating;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+}

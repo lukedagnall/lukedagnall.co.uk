@@ -1,0 +1,24 @@
+.section{
+  margin: 40px 0;
+  padding: 15px 0;
+  text-align: center;
+
+  .section__title{
+    font-size: 1.2em;
+    line-height: 1.4em;
+    font-weight: 500;
+    margin-top: 0;
+
+    @media #{$tablet}{
+      font-size: 1.2em;
+    }
+  }
+
+  .section__tag{
+    display: block;
+    margin: 20px 0;
+    line-height: 1.6em;
+    font-size: em(16);
+    color: $tertiaryColor;
+  }
+}

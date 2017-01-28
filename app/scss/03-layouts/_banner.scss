@@ -1,0 +1,17 @@
+.banner{
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+
+  h1{
+    width: 100%;
+    z-index: 3;
+    font-weight: normal;
+    font-size: em(24);
+    font-weight: 500;
+    margin: 0;
+  }
+}

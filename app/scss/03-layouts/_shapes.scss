@@ -1,0 +1,105 @@
+.shape-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  @include display(flex);
+  @include align-items(center);
+}
+
+.shape-wrapper--header{
+  position: relative;
+  left: 0;
+  right: 0;
+  height: 25%;
+  max-height: 160px;
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+
+  .shape{
+    &:nth-of-type(1){
+      bottom: 35%;
+      left: 8%;
+    }
+
+    &:nth-of-type(2){
+      top: 15%;
+      left: 15%;
+      animation-delay: 2s;
+    }
+
+    &:nth-of-type(3){
+      bottom: 20%;
+      left: 25%;
+    }
+
+    &:nth-of-type(4){
+      bottom: 60%;
+      left: 35%;
+    }
+
+    &:nth-of-type(5){
+      bottom: 90%;
+      left: 34%;
+      animation-delay: 2s;
+    }
+
+    &:nth-of-type(6){
+      bottom: 28%;
+      left: 43%;
+    }
+
+    &:nth-of-type(7){
+      top: 25%;
+      left: 55%;
+      animation-delay: 2s;
+    }
+
+    &:nth-of-type(8){
+      bottom: 30%;
+      right: 31%;
+    }
+
+    &:nth-of-type(9){
+      top: 3%;
+      right: 30%;
+      animation-delay: 2s;
+    }
+
+    &:nth-of-type(10){
+      top: 29%;
+      right: 17%;
+    }
+
+    &:nth-of-type(11){
+      bottom: 30%;
+      right: 12%;
+      animation-delay: 2s;
+    }
+  }
+
+  @media #{$tablet}{
+    margin: 0 auto;
+  }
+}
+
+.shape{
+  display: inline-block;
+  position: absolute;
+  @include size(14px);
+  -webkit-animation-name: Floating;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floating {
+  from {
+    -webkit-transform: translate(0, 0px); }
+  50% {
+    -webkit-transform: translate(0, 8px); }
+  to {
+    -webkit-transform: translate(0, 0px); }
+}

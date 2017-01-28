@@ -1,0 +1,173 @@
+.line-path{
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  .line-path__title{
+    font-weight: 500;
+
+    a{
+      text-decoration: none;
+    }
+  }
+
+  &:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 90px;
+    top: 30px;
+    width: 2px;
+    background: lighten($primaryColor, 10%);
+  }
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: translate(0%) scaleX(0);
+            transform: translate(0%) scaleX(0);
+  }
+  30% {
+    -webkit-transform: translate(0%) scaleX(1);
+            transform: translate(0%) scaleX(1);
+  }
+  80% {
+    -webkit-transform: translate(100%) scaleX(0);
+            transform: translate(100%) scaleX(0);
+  }
+  100% {
+    -webkit-transform: translate(100%) scaleX(0);
+            transform: translate(100%) scaleX(0);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: translate(0%) scaleX(0);
+            transform: translate(0%) scaleX(0);
+  }
+  30% {
+    -webkit-transform: translate(0%) scaleX(1);
+            transform: translate(0%) scaleX(1);
+  }
+  80% {
+    -webkit-transform: translate(100%) scaleX(0);
+            transform: translate(100%) scaleX(0);
+  }
+  100% {
+    -webkit-transform: translate(100%) scaleX(0);
+            transform: translate(100%) scaleX(0);
+  }
+}
+
+.contact-details{
+  .contact-link{
+    padding-top: 10px;
+  }
+
+  .contact-link__title{
+    color: $tertiaryColor;
+    display: inline-block;
+    width: 20%;
+    max-width: 120px;
+    display: inline-block;
+  }
+
+  @media #{$tablet}{
+    @include flex(1);
+  }
+}
+
+.img--centered{
+  max-width: 225px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.btn{
+  padding: 10px;
+  font-weight: 500;
+
+  .btn__text{
+    font-size: em(16);
+    text-decoration: none;
+    padding: 5px;
+
+    &:after{
+      font-weight: bold;
+      content: '\2192';
+      display: inline-block;
+      margin-left: 7px;
+    }
+  }
+}
+
+.btn--light{
+
+  .btn__text{
+    font-weight: 400;
+    color: lighten($primaryColor, 45%);
+  }
+}
+
+.pre-loader{
+  width: 100%;
+  z-index: 7;
+  position: fixed;
+  height: 100vh;
+  background: $white;
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+
+  .dot{
+    margin: 0 5px;
+    @include size(10px);
+    border-radius: 60px;
+    background: white;
+    display: inline-block;
+    animation: load 2s infinite ease-in-out;
+  }
+
+  .dot--blue{
+    background: $blue;
+  }
+
+  .dot--red{
+    background: $red;
+    animation-delay: 0.25s;
+  }
+
+  .dot--yellow{
+    background: $yellow;
+    animation-delay: 0.5s;
+  }
+
+  .dot--green{
+    background: $green;
+    animation-delay: 0.75s;
+  }
+}
+
+@keyframes load {
+    50% {
+        transform: translateY(25px);
+    }
+}
+
+.logo{
+  a{
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+
+.logo--large{
+  font-size: em(21);
+  margin: 25px 0;
+  font-weight: 500;
+}

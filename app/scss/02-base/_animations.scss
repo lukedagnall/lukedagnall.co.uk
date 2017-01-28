@@ -1,0 +1,150 @@
+.swipeloader{
+
+  .swipeloader__element{
+    animation-duration: .7s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+
+  .swipeloader__element--slideInRight{
+    content: '';
+    position: fixed;
+    z-index: 8;
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background: $blue;
+    animation-name: slideInRight;
+  }
+
+  .swipeloader__element--fadeOut{
+    top: 0;
+    content: '';
+    position: absolute;
+    z-index: 7;
+    height: 100%;
+    width: 100%;
+    background: $white;
+    animation-name: fadeOut;
+  }
+
+  &.is-exiting{
+    .swipeloader__element{
+      animation-direction: alternate-reverse;
+    }
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    background: $blue;
+    left: -100%;
+  }
+
+  45%{
+    left:0;
+  }
+
+  50%{
+    background: $blue;
+    right: 0;
+    left: auto;
+  }
+
+  75%{
+    background: $yellow;
+  }
+
+  100% {
+    right: -100%;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  70%{
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animation-done{
+  z-index: 0;
+}
+
+
+$duration: 600ms;
+$iterations: 1;
+
+.reveal,
+.reveal:after {
+	animation-iteration-count: $iterations;
+	animation-duration: $duration;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.reveal {
+	position: relative;
+	display: block;
+	user-select: none;
+	animation-name: reveal;
+	white-space: nowrap;
+
+	&:after {
+		content: "";
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $blue;
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+		pointer-events: none;
+		animation-name: revealer;
+	}
+
+}
+
+
+@keyframes reveal {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+
+@keyframes revealer {
+
+	0%, 50% {
+		transform-origin: 0 50%;
+	}
+
+	60%, 100% {
+		transform-origin: 100% 50%;
+	}
+
+	50% {
+		transform: scaleX(1);
+	}
+
+	60% {
+		transform: scaleX(1);
+	}
+
+	100% {
+		transform: scaleX(0);
+	}
+}
