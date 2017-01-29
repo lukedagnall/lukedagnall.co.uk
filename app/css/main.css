@@ -149,7 +149,6 @@ a {
 .reveal:after {
   animation-iteration-count: 1;
   animation-duration: 600ms;
-  animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
@@ -173,6 +172,10 @@ a {
   transform-origin: 0 50%;
   pointer-events: none;
   animation-name: revealer;
+}
+
+.reveal--yellow:after {
+  background-color: #FBC43E;
 }
 
 @keyframes reveal {
@@ -267,12 +270,6 @@ a {
   background: transparent;
   z-index: 4;
 }
-@media (min-width: 1024px) {
-  .site-nav {
-    width: auto;
-    position: relative;
-  }
-}
 
 .site-nav__items {
   padding: 60px 20px 20px 40px;
@@ -280,7 +277,7 @@ a {
   height: 100vh;
   right: -100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0px;
   -webkit-transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
   transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
@@ -583,6 +580,11 @@ a {
     font-weight: 400;
   }
 }
+@media (min-width: 1420px) {
+  .footer-cta {
+    height: 300px;
+  }
+}
 .footer-cta:hover .underlined:after {
   width: 100%;
 }
@@ -681,6 +683,7 @@ a {
   font-weight: 500;
 }
 .btn .btn__text {
+  color: #3C4C62;
   font-size: 1em;
   text-decoration: none;
   padding: 5px;
@@ -843,7 +846,7 @@ a {
 }
 @media (min-width: 1420px) {
   .track-container {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
   }
 }
@@ -963,7 +966,7 @@ a {
   left: 0;
   right: 0;
   height: 25%;
-  max-height: 160px;
+  max-height: 150px;
   width: 100%;
   max-width: 500px;
   padding: 15px;
@@ -1058,6 +1061,18 @@ a {
     padding: 0;
   }
 }
+.work-container a {
+  display: block;
+  margin-bottom: 90px;
+}
+.work-container a:last-child {
+  margin-bottom: 0px;
+}
+@media (min-width: 1024px) {
+  .work-container a {
+    margin-bottom: 150px;
+  }
+}
 
 .work-tile {
   margin: 10px 0;
@@ -1078,6 +1093,8 @@ a {
   top: 0;
   right: 0;
   background: #FBC43E;
+  -webkit-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .work-tile .shape-wrapper {
   position: absolute;
@@ -1121,6 +1138,7 @@ a {
   height: 90%;
 }
 .work-tile .work-tile__title {
+  z-index: 2;
   position: absolute;
   left: 15px;
   bottom: 15px;
@@ -1140,14 +1158,6 @@ a {
   font-weight: 400;
   color: #fff;
   padding: 0;
-}
-.work-tile:nth-of-type(2n) {
-  margin-top: 90px;
-}
-@media (min-width: 1024px) {
-  .work-tile:nth-of-type(2n) {
-    margin-top: 150px;
-  }
 }
 @media (min-width: 1024px) {
   .work-tile .btn {
@@ -1251,4 +1261,18 @@ a {
   bottom: 0px;
   margin-bottom: -2px;
   left: 90px;
+}
+
+.tile-swipe {
+  cursor: e-resize;
+}
+.tile-swipe .work-tile__title {
+  font-size: 1.75em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 50%;
+}
+.tile-swipe:after {
+  width: 100%;
 }

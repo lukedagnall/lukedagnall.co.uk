@@ -10,11 +10,26 @@
       center: true
     });
 
-    console.log('test');
+    $('.work-tile').hover(
+      function(){
+        $(this).toggleClass('tile-swipe');
 
+        $(this).find('.work-tile__img').fadeToggle(50);
+      }
+    );
 
     $('.footer-cta').waypoint(function(direction){
       $(this.element).addClass('reveal');
+    }, {
+      offset: '100%;'
+    });
+
+    $('.work-tile').waypoint(function(direction){
+      if ($(this.element).hasClass('work-tile--yellow')) {
+        $(this.element).parent().addClass('reveal reveal--yellow');
+      }else{
+        $(this.element).parent().addClass('reveal');
+      }
     }, {
       offset: '100%;'
     });

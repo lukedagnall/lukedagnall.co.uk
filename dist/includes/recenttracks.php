@@ -9,7 +9,7 @@
 
     if($i == 4 ) { break;}?>
      <div class="track <?php if($x['nowplaying'][0] =='true'){echo 'track--now-playing';}?> <?php echo 'track--'.$colours[$i];?>">
-       <span class="track__title"><?php echo strtok($title, '-');?></span>
+       <span class="track__title"><?php echo strtok($title, '-\(');?></span>
        <span class="track__artist"><?php echo $x->artist;?></span>
      </div>
 

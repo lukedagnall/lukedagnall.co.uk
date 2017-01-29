@@ -9,7 +9,7 @@
     <h1>Web Developer &amp; Designer</h1>
 
     <div class="line-path">
-      <div class="line-path__title"><a href="#explore">Explore</a></div>
+      <div class="line-path__title"><a href="#explore">Work</a></div>
     </div>
   </div>
 
@@ -17,66 +17,70 @@
     <main>
       <section class="section section--work" id="explore">
         <div class="work-container">
-          <div class="work-tile work-tile--feature work-tile--yellow">
-            <div class="shape-wrapper shape-wrapper--work rellax" data-rellax-speed="0.7">
-              <div class="shape shape--plus">
-                <img src="/images/shapes/plus-yellow.svg" alt="">
-              </div>
-              <div class="shape shape--diamond">
-                <img src="/images/shapes/diamond-red.svg" alt="">
-              </div>
+          <a href="#">
+            <div class="work-tile work-tile--feature work-tile--yellow">
+              <div class="shape-wrapper shape-wrapper--work rellax" data-rellax-speed="0.7">
+                <div class="shape shape--plus">
+                  <img src="/images/shapes/plus-yellow.svg" alt="">
+                </div>
+                <div class="shape shape--diamond">
+                  <img src="/images/shapes/diamond-red.svg" alt="">
+                </div>
 
-              <div class="shape shape--plus">
-                <img src="/images/shapes/plus-blue.svg" alt="">
-              </div>
+                <div class="shape shape--plus">
+                  <img src="/images/shapes/plus-blue.svg" alt="">
+                </div>
 
-              <div class="shape shape--diamond">
-                <img src="/images/shapes/diamond-green.svg" alt="">
-              </div>
+                <div class="shape shape--diamond">
+                  <img src="/images/shapes/diamond-green.svg" alt="">
+                </div>
 
-              <div class="shape shape--plus">
-                <img src="/images/shapes/plus-yellow.svg" alt="">
+                <div class="shape shape--plus">
+                  <img src="/images/shapes/plus-yellow.svg" alt="">
+                </div>
+              </div>
+              <div class="work-tile__img">
+                <img src="images/placeholder.png" alt="">
+              </div>
+              <h2 class="work-tile__title">Digital CV</h2>
+              <div class="btn">
+                <span href="#" class="btn__text">View project</span>
               </div>
             </div>
-            <div class="work-tile__img">
-              <img src="images/placeholder.png" alt="">
-            </div>
-            <h2 class="work-tile__title">Digital CV</h2>
-            <div class="btn">
-              <a href="#" class="btn__text">View project</a>
-            </div>
-          </div>
+          </a>
 
-          <div class="work-tile work-tile--feature work-tile--blue">
-            <div class="shape-wrapper shape-wrapper--work rellax" data-rellax-speed="0.7">
-              <div class="shape shape--plus">
-                <img src="/images/shapes/plus-yellow.svg" alt="">
-              </div>
+          <a href="#">
+            <div class="work-tile work-tile--feature work-tile--blue">
+              <div class="shape-wrapper shape-wrapper--work rellax" data-rellax-speed="0.7">
+                <div class="shape shape--plus">
+                  <img src="/images/shapes/plus-yellow.svg" alt="">
+                </div>
 
-              <div class="shape shape--diamond">
-                <img src="/images/shapes/diamond-green.svg" alt="">
-              </div>
+                <div class="shape shape--diamond">
+                  <img src="/images/shapes/diamond-green.svg" alt="">
+                </div>
 
-              <div class="shape shape--plus">
-                <img src="/images/shapes/plus-blue.svg" alt="">
-              </div>
+                <div class="shape shape--plus">
+                  <img src="/images/shapes/plus-blue.svg" alt="">
+                </div>
 
-              <div class="shape shape--plus">
-                <img src="/images/shapes/plus-yellow.svg" alt="">
-              </div>
+                <div class="shape shape--plus">
+                  <img src="/images/shapes/plus-yellow.svg" alt="">
+                </div>
 
-              <div class="shape shape--diamond">
-                <img src="/images/shapes/diamond-red.svg" alt="">
+                <div class="shape shape--diamond">
+                  <img src="/images/shapes/diamond-red.svg" alt="">
+                </div>
+              </div>
+              <div class="work-tile__img">
+                <img src="images/placeholder.png" alt="">
+              </div>
+              <h2 class="work-tile__title">Digital CV</h2>
+              <div class="btn">
+                <span href="#" class="btn__text">View project</span>
               </div>
             </div>
-            <div class="work-tile__img">
-              <img src="images/placeholder.png" alt="">
-            </div>
-            <h2 class="work-tile__title">Digital CV</h2>
-            <div class="btn">
-              <a href="#" class="btn__text">View project</a>
-            </div>
-          </div>
+          </a>
         </div>
       </section>
     </main>

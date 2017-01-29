@@ -53,6 +53,10 @@
     }
   }
 
+  @media #{$desktop}{
+    height: 300px;
+  }
+
   &:hover{
     .underlined{
       &:after{

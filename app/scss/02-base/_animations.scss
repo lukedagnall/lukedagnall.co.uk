@@ -87,7 +87,7 @@ $iterations: 1;
 .reveal:after {
 	animation-iteration-count: $iterations;
 	animation-duration: $duration;
-	animation-fill-mode: both;
+	//animation-fill-mode: both;
 	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
 }
 
@@ -113,6 +113,12 @@ $iterations: 1;
 		animation-name: revealer;
 	}
 
+}
+
+.reveal--yellow{
+  &:after{
+    background-color: $yellow;
+  }
 }
 
 
