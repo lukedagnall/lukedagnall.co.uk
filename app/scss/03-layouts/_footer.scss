@@ -19,15 +19,21 @@
 
 .social-icons{
   .icon{
+    transition: all 0.1s ease-in-out;
     @media #{$tablet}{
       margin-top: 35px;
       margin-right: 0;
       margin-left: 18px;
     }
+
+    &:hover{
+      fill: $red;
+    }
   }
 }
 
 .footer-cta{
+  text-align: center;
   cursor: pointer;
   padding: 40px;
   width: 100%;
@@ -61,6 +67,12 @@
     .underlined{
       &:after{
         width: 100%;
+      }
+    }
+
+    .btn{
+      .btn__text:after{
+        margin-left: 15px;
       }
     }
   }

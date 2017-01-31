@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Your title here</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+
   <body>
     <div class="swipeloader" id="main">
       <div class="swipeloader__element swipeloader__element--fadeOut"></div>
@@ -24,10 +17,10 @@
       </div>
 
       <div class="site-nav__items">
-        <a href="#" class="current-page">Home</a>
-        <a href="#">About</a>
-        <a href="/">Contact</a>
-        <a href="about.php">Case study</a>
+        <a href="/index.php" class="current-page">Home</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/">Case study</a>
 
         <div class="contact-details">
           <div class="contact-link">

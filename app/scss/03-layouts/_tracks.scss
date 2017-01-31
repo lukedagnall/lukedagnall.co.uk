@@ -72,7 +72,7 @@
 
   @media #{$desktop}{
     width: 80%;
-    margin: 0 auto;
+    margin: 40px auto;
   }
 }
 
@@ -106,10 +106,11 @@
   }
 
   @media #{$laptop}{
-    top: 0;
-    left: auto;
-    right: 250px;
+    top: auto;
+    left: 250px;
+    right: auto;
     margin: 0;
+    bottom: 25px;
   }
 }
 
@@ -124,8 +125,12 @@
   }
 
   @media #{$laptop}{
-    right: 0;
+    top: 0;
+    left: auto;
+    right: 250px;
+    margin: 0;
   }
+
 }
 
 .track--green{
@@ -141,11 +146,12 @@
   }
 
   @media #{$laptop}{
-    left: 250px;
-    right: auto;
-    margin: 0;
-    bottom: 25px;
+    top: calc(50% - 35px);
+    right: 0;
+    left: auto;
+    bottom: auto;
   }
+
 }
 
 .track--now-playing{

@@ -84,7 +84,7 @@
     bottom: 15px;
     z-index: 3;
 
-    a{
+    .btn__text{
       font-size: em(15);
       font-weight: 400;
       color: $white;
@@ -231,11 +231,12 @@
   cursor:e-resize;
 
   .work-tile__title{
+    color: $white;
     font-size: em(28);
     left: 0;
     right: 0;
     margin: 0 auto;
-    bottom: 50%;
+    bottom: calc(50% - 20px);
   }
 
   &:after{

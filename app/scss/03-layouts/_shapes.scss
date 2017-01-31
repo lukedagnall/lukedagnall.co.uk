@@ -12,8 +12,7 @@
   position: relative;
   left: 0;
   right: 0;
-  height: 25%;
-  max-height: 150px;
+  height: 150px;
   width: 100%;
   max-width: 500px;
   padding: 15px;
@@ -82,6 +81,15 @@
 
   @media #{$tablet}{
     margin: 0 auto;
+  }
+}
+
+.shape-wrapper--small{
+  .shape{
+    display: none;
+      &:nth-of-type(4),&:nth-of-type(6),&:nth-of-type(7){
+        display: block;
+      }
   }
 }
 

@@ -1,4 +1,15 @@
-<?php include 'includes/header.php' ?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="The portfolio of Manchester based developer and designer, Luke Dagnall">
+    <title>Home - lukedagnall.co.uk</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <?php include 'includes/header.php' ?>
+
   <div class="banner">
     <div class="shape-container">
       <div class="shape-wrapper shape-wrapper--header">
@@ -40,9 +51,9 @@
                 </div>
               </div>
               <div class="work-tile__img">
-                <img src="images/placeholder.png" alt="">
+                <img src="/images/placeholder.png" alt="">
               </div>
-              <h2 class="work-tile__title">Digital CV</h2>
+              <h2 class="work-tile__title">My Style Guide</h2>
               <div class="btn">
                 <span href="#" class="btn__text">View project</span>
               </div>
@@ -73,7 +84,7 @@
                 </div>
               </div>
               <div class="work-tile__img">
-                <img src="images/placeholder.png" alt="">
+                <img src="/images/placeholder.png" alt="">
               </div>
               <h2 class="work-tile__title">Digital CV</h2>
               <div class="btn">
@@ -90,7 +101,7 @@
     <section class="section section--tracks">
       <h2 class="section__title">Appreciate what i'm listening to right now</h2>
       <span class="section__tag">My last four tracks and what i'm currently playing (<img class="icon icon--tiny" src="/images/shapes/note.svg" alt="">) on Spotify</span>
-      <img class="img--centered"src="images/shapes/sxc.svg" alt="">
+      <img class="img--centered"src="/images/shapes/sxc.svg" alt="">
 
       <div class="track-container">
         <?php include 'includes/recenttracks.php' ?>

@@ -1,6 +1,6 @@
   <footer class="footer">
 
-    <a href="#">
+    <a href="/contact/">
       <div class="footer-cta">
         <h3 class="footer-cta__text">Let's build something <span class="underlined">together</span></h3>
         <div class="btn btn--light">
@@ -26,13 +26,13 @@
         </div>
 
         <div class="social-icons">
-          <a href="#">
+          <a href="https://github.com/lukedagnall/" target="blank">
             <svg class="icon">
               <use xlink:href="/images/icons/social-sprite.svg#github-logo" />
             </svg>
           </a>
 
-          <a href="#">
+          <a href="https://twitter.com/lukedagnall/" target="blank">
             <svg class="icon">
               <use xlink:href="/images/icons/social-sprite.svg#twitter-logo" />
             </svg>
@@ -42,7 +42,6 @@
     </div>
   </footer>
 </div>
-  <script src="js/main.js" charset="utf-8"></script>
-
+<script src="/js/main.js" charset="utf-8"></script>
   </body>
 </html>

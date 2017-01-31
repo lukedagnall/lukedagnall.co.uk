@@ -17,6 +17,12 @@
   position: fixed;
   background: transparent;
   z-index: 4;
+
+  @media #{$laptop}{
+    .contact-details{
+      display: none;
+    }
+  }
 }
 
 .site-nav__items{
@@ -52,6 +58,25 @@
     }
     &:nth-of-type(4){
       transition-delay: 0.15s;
+    }
+
+    &:after{
+      content: '';
+      position: absolute;
+      width: 0;
+      left: 10px;
+      bottom: -2px;
+      height: 2px;
+      background: $red;
+      transition: all 0.2s ease-in-out;
+    }
+
+    @media #{$laptop}{
+      &:hover{
+        &:after{
+          width: calc(100% - 20px);
+        }
+      }
     }
   }
 
@@ -91,7 +116,19 @@
 
 
   @media #{$laptop}{
-    // REVIEW:
+    left: 0;
+    padding: 0;
+    background: transparent;
+    height: auto;
+    width: auto;
+    position: relative;
+
+    a{
+      display: inline-block;
+      left: 0;
+      padding: 0 10px;
+      font-size: em(16);
+    }
   }
 }
 
@@ -113,7 +150,7 @@
     border: 0;
 
     @media #{$laptop}{
-      // REVIEW:
+      display: none;
     }
 }
 
