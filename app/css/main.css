@@ -29,6 +29,10 @@ a {
   fill: #3C4C62;
 }
 
+.icon--blue {
+  fill: #81AFDE;
+}
+
 .icon--tiny {
   margin: 0;
   height: 18px;
@@ -52,6 +56,13 @@ a {
 @media (min-width: 1420px) {
   .site-container {
     width: 1200px;
+  }
+}
+
+@media (min-width: 1420px) {
+  .site-container--central {
+    width: 970px;
+    margin: 0 auto;
   }
 }
 
@@ -80,6 +91,126 @@ a {
 /* --------------------------------*/
 /* --- Media Queries --- */
 /* --- Media Querys --- */
+.dual-row {
+  padding: 25px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+@media (min-width: 768px) {
+  .dual-row {
+    padding: 80px 0;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+  }
+  .dual-row .column {
+    width: 55%;
+  }
+  .dual-row.dual-row--reverse {
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -moz-box-direction: reverse;
+    box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1024px) {
+  .dual-row .column {
+    width: 50%;
+  }
+}
+
+.column {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .column {
+    width: 50%;
+  }
+}
+
+.column--img {
+  padding: 30px;
+}
+.column--img img {
+  display: table;
+  width: 100%;
+  height: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .column--img {
+    width: 40% !important;
+    padding: 0;
+  }
+  .column--img img {
+    width: 100%;
+    height: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .column--img {
+    width: 35% !important;
+  }
+}
+
+p {
+  margin: 20px 0;
+  line-height: 1.74em;
+  font-size: 1em;
+  color: gray;
+}
+
+.centered-text {
+  text-align: center;
+}
+
 .swipeloader .swipeloader__element {
   animation-duration: .7s;
   transition-timing-function: ease-in;
@@ -333,7 +464,7 @@ a {
   position: absolute;
   width: 0;
   left: 10px;
-  bottom: -2px;
+  bottom: 7px;
   height: 2px;
   background: #F48385;
   transition: all 0.2s ease-in-out;
@@ -370,6 +501,7 @@ a {
     left: 0;
     padding: 0 10px;
     font-size: 1em;
+    font-weight: 400;
   }
 }
 
@@ -503,8 +635,8 @@ a {
   width: 100%;
   z-index: 3;
   font-weight: normal;
-  font-size: 1.5em;
-  font-weight: 500;
+  font-size: 1.75em;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -517,6 +649,32 @@ a {
 }
 .banner--small h1 {
   line-height: 1.4em;
+}
+
+.banner--medium {
+  height: 425px;
+  padding-top: 70px;
+}
+.banner--medium .shape-container {
+  padding-top: 70px;
+}
+
+.img-full {
+  margin-bottom: 25px;
+  height: 275px;
+  background: url("/images/banners/about-banner.png");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+@media (min-width: 1024px) {
+  .img-full {
+    height: 325px;
+  }
+}
+@media (min-width: 1420px) {
+  .img-full {
+    height: 400px;
+  }
 }
 
 .section {
@@ -541,6 +699,15 @@ a {
   line-height: 1.6em;
   font-size: 1em;
   color: #bbbbbb;
+}
+
+.section--no-margin {
+  margin: 0;
+}
+@media (min-width: 1420px) {
+  .section--no-margin {
+    padding: 0;
+  }
 }
 
 .footer {
@@ -649,6 +816,49 @@ a {
 }
 .footer-cta:hover .btn .btn__text:after {
   margin-left: 15px;
+}
+
+.tweet {
+  padding: 30px 0;
+}
+
+.tweet__content {
+  display: block;
+  font-size: 1.0625em;
+  padding: 25px 0;
+  line-height: 1.7em;
+}
+
+.tweet__likes {
+  padding: 0 5px;
+  color: #888888;
+}
+.tweet__likes:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 7px;
+  background-image: url("/images/shapes/heart.svg");
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
+}
+
+.tweet__retweets {
+  padding: 0 5px;
+  color: #888888;
+}
+.tweet__retweets:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 5px;
+  background-image: url("/images/icons/retweet.svg");
+  background-size: 20px 20px;
+  height: 20px;
+  width: 20px;
 }
 
 .line-path {
@@ -990,6 +1200,13 @@ textarea {
   }
 }
 
+@media (min-width: 1420px) {
+  .track-container--no-margin {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .track--blue:after {
   background-image: url("/images/shapes/circle-blue.svg");
 }
@@ -1173,6 +1390,42 @@ textarea {
 }
 .shape-wrapper--small .shape:nth-of-type(4), .shape-wrapper--small .shape:nth-of-type(6), .shape-wrapper--small .shape:nth-of-type(7) {
   display: block;
+}
+
+.shape-wrapper--text {
+  position: relative;
+  bottom: 0px;
+  left: -20px;
+}
+.shape-wrapper--text .shape {
+  animation: none;
+}
+.shape-wrapper--text .shape:nth-of-type(1) {
+  left: 4px;
+  bottom: 60px;
+}
+@media (min-width: 1024px) {
+  .shape-wrapper--text .shape:nth-of-type(1) {
+    left: -20px;
+  }
+}
+.shape-wrapper--text .shape:nth-of-type(2) {
+  left: 8px;
+  bottom: 10px;
+}
+@media (min-width: 1024px) {
+  .shape-wrapper--text .shape:nth-of-type(2) {
+    left: -28px;
+  }
+}
+.shape-wrapper--text .shape:nth-of-type(3) {
+  left: 50px;
+  bottom: 0px;
+}
+@media (min-width: 1024px) {
+  .shape-wrapper--text .shape:nth-of-type(3) {
+    bottom: -20px;
+  }
 }
 
 .shape {

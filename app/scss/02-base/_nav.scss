@@ -65,7 +65,7 @@
       position: absolute;
       width: 0;
       left: 10px;
-      bottom: -2px;
+      bottom: 7px;
       height: 2px;
       background: $red;
       transition: all 0.2s ease-in-out;
@@ -128,6 +128,7 @@
       left: 0;
       padding: 0 10px;
       font-size: em(16);
+      font-weight: 400;
     }
   }
 }

@@ -76,6 +76,13 @@
   }
 }
 
+.track-container--no-margin{
+  @media #{$desktop}{
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .track--blue{
   &:after{
     background-image: url('/images/shapes/circle-blue.svg');

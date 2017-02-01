@@ -22,3 +22,10 @@
     color: $tertiaryColor;
   }
 }
+
+.section--no-margin{
+  margin: 0;
+  @media #{$desktop}{
+    padding: 0;
+  }
+}

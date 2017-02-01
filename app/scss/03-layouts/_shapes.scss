@@ -93,6 +93,43 @@
   }
 }
 
+.shape-wrapper--text{
+  position: relative;
+  bottom: 0px;
+  left: -20px;
+
+  .shape{
+    animation: none;
+
+    &:nth-of-type(1){
+      left: 4px;
+      bottom: 60px;
+
+      @media #{$laptop}{
+        left: -20px;
+      }
+    }
+
+    &:nth-of-type(2){
+      left: 8px;
+      bottom: 10px;
+
+      @media #{$laptop}{
+        left: -28px;
+      }
+    }
+
+    &:nth-of-type(3){
+      left: 50px;
+      bottom: 0px;
+
+      @media #{$laptop}{
+        bottom: -20px;
+      }
+    }
+  }
+}
+
 .shape{
   display: inline-block;
   position: absolute;

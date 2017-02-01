@@ -1,0 +1,44 @@
+.tweet{
+  padding: 30px 0;
+}
+
+.tweet__content{
+  display: block;
+  font-size: em(17);
+  padding: 25px 0;
+  line-height: 1.7em;
+}
+
+.tweet__likes{
+  padding: 0 5px;
+  color: darken($grey, 40%);
+
+  &:before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 7px;
+    background-image: url('/images/shapes/heart.svg');
+    background-size: 16px 16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.tweet__retweets{
+  padding: 0 5px;
+  color: darken($grey, 40%);
+
+  &:before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 5px;
+    background-image: url('/images/icons/retweet.svg');
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+  }
+}

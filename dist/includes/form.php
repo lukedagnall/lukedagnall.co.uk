@@ -4,7 +4,7 @@
   <form id="ajax-contact" method="post" action="mailer.php">
     <div class="field">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required autofocus>
+      <input type="text" id="name" name="name" required>
     </div>
 
     <div class="field">

@@ -10,8 +10,8 @@
     width: 100%;
     z-index: 3;
     font-weight: normal;
-    font-size: em(24);
-    font-weight: 500;
+    font-size: em(28);
+    font-weight: 400;
     margin: 0;
   }
 }
@@ -26,5 +26,30 @@
 
   h1{
     line-height: 1.4em;
+  }
+}
+
+.banner--medium{
+  height: 425px;
+  padding-top: 70px;
+
+  .shape-container{
+    padding-top: 70px;
+  }
+}
+
+.img-full{
+  margin-bottom: 25px;
+  height: 275px;
+  background: url('/images/banners/about-banner.png');
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @media #{$laptop}{
+    height: 325px;
+  }
+
+  @media #{$desktop}{
+    height: 400px;
   }
 }
