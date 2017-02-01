@@ -635,7 +635,7 @@ p {
   width: 100%;
   z-index: 3;
   font-weight: normal;
-  font-size: 1.75em;
+  font-size: 1.625em;
   font-weight: 400;
   margin: 0;
 }
@@ -1179,13 +1179,14 @@ textarea {
 }
 
 .track-container {
+  padding: 25px 0;
   position: relative;
   width: 100%;
 }
 @media (min-width: 768px) {
   .track-container {
     height: 350px;
-    margin: 35px 0;
+    margin: 100px 0;
   }
 }
 @media (min-width: 1024px) {
@@ -1196,7 +1197,7 @@ textarea {
 @media (min-width: 1420px) {
   .track-container {
     width: 80%;
-    margin: 40px auto;
+    margin: 110px auto;
   }
 }
 
@@ -1242,7 +1243,7 @@ textarea {
     left: 250px;
     right: auto;
     margin: 0;
-    bottom: 25px;
+    bottom: 0px;
   }
 }
 
@@ -1537,6 +1538,7 @@ textarea {
 .work-tile .work-tile__img img {
   position: absolute;
   right: 0;
+  top: 0;
   height: 90%;
 }
 .work-tile .work-tile__title {
@@ -1579,6 +1581,11 @@ textarea {
 @media (min-width: 768px) {
   .work-tile {
     height: 48vw;
+  }
+}
+@media (min-width: 1024px) {
+  .work-tile {
+    height: 37vw;
   }
 }
 @media (min-width: 1420px) {

@@ -16,7 +16,7 @@
         <div class="contact-details">
           <div class="contact-link">
             <span class="contact-link__title">email</span>
-            <span><a href="mailto:joe@example.com?subject=Hi Luke!">luke@lukedagnall.com</a></span>
+            <span><a href="mailto:joe@example.com?subject=contact_form">luke@lukedagnall.com</a></span>
           </div>
 
           <div class="contact-link">

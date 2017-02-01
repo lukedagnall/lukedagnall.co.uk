@@ -63,6 +63,7 @@
     img{
       position: absolute;
       right: 0;
+      top: 0;
       height: 90%;
     }
   }
@@ -114,6 +115,10 @@
 
   @media #{$tablet}{
     height: 48vw;
+  }
+
+  @media #{$laptop}{
+    height: 37vw;
   }
 
   @media #{$desktop}{

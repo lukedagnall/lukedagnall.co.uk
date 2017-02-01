@@ -58,12 +58,13 @@
 }
 
 .track-container{
+  padding: 25px 0;
   position: relative;
   width: 100%;
 
   @media #{$tablet}{
     height: 350px;
-    margin: 35px 0;
+    margin: 100px 0;
   }
 
   @media #{$laptop}{
@@ -72,7 +73,7 @@
 
   @media #{$desktop}{
     width: 80%;
-    margin: 40px auto;
+    margin: 110px auto;
   }
 }
 
@@ -117,7 +118,7 @@
     left: 250px;
     right: auto;
     margin: 0;
-    bottom: 25px;
+    bottom: 0px;
   }
 }
 
