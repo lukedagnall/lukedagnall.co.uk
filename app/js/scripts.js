@@ -129,9 +129,13 @@
 
         if (!$(this).hasClass('open-nav')) {
           $(this).addClass('open-nav');
+          $('.site-nav__items').addClass('slide');
+          $('.site-nav__items > a').addClass('slide')
           toggleNav(true);
         } else {
           $(this).removeClass('open-nav');
+          $('.site-nav__items').removeClass('slide');
+          $('.site-nav__items > a').removeClass('slide');
           toggleNav(false);
         }
 
@@ -140,11 +144,9 @@
       function toggleNav(bool) {
 
         if (bool === true) {
-          $('.site-nav__items').addClass('slide');
-          $('.site-nav__items > a').addClass('slide')
+
         } else {
-          $('.site-nav__items').removeClass('slide');
-          $('.site-nav__items > a').removeClass('slide');
+
         }
 
       }
